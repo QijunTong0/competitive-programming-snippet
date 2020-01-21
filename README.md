@@ -1,2 +1,2 @@
 # competitive-programming-snippet
-competitive programming
+競技プログラミングで用いるアルゴリズム(自分用)
