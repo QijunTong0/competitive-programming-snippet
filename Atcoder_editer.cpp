@@ -55,5 +55,5 @@ int main() {
             r = x;
         }
     }
-    cout << r << endl;
+    cout << l << endl;
 }
