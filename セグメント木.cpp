@@ -34,7 +34,6 @@ template <typename Mnd> struct segment_tree {
         }
         return f(l, r);
     }
-<<<<<<< HEAD
 };
 // ref::https://ei1333.github.io/luzhiled/snippets/structure/segment-tree.html
 /*
@@ -43,6 +42,3 @@ segment_tree<int> seg(n, [](int a, int b) { return a + b; }, 0);
 RMQ
 segment_tree<int> seg(n, [](int a, int b) { return min(a,b); }, LLONG_MAX);
 */
-=======
-};
->>>>>>> 6c2d2baf78a7d119dc5cc3c9bfcd5fec4b435c5b
