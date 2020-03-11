@@ -1,6 +1,10 @@
 vector<ll> Dijkstra_list(int n, int s, vector<vector<pair<ll, ll>>> &Edge) {
     vector<bool> visited(n, false); //確定済み
+<<<<<<< HEAD
     vector<ll> d(n, __LONG_LONG_MAX__ / 3);
+=======
+    vector<ll> d(n, __LONG_LONG_MAX__);
+>>>>>>> 6c2d2baf78a7d119dc5cc3c9bfcd5fec4b435c5b
     priority_queue<pair<ll, ll>, vector<pair<ll, ll>>, greater<pair<ll, ll>>>
         que; //頂点とsからの距離
     d[s] = 0;
@@ -20,7 +24,11 @@ vector<ll> Dijkstra_list(int n, int s, vector<vector<pair<ll, ll>>> &Edge) {
     }
     return d;
 }
+<<<<<<< HEAD
 /*重みなし=幅優先探索
+=======
+/*重みなし
+>>>>>>> 6c2d2baf78a7d119dc5cc3c9bfcd5fec4b435c5b
 vector<int> d(n, -1);
 queue<int> que;
 que.push(u);

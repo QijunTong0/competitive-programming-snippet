@@ -17,7 +17,11 @@ ll COM(ll n, ll k) {
         return 0;
     return fac[n] * (finv[k] * finv[n - k] % MOD) % MOD;
 }
+<<<<<<< HEAD
 ll modpow(ll a, ll n, ll mod = MOD) {
+=======
+ll modpow(ll a, ll n, ll mod) {
+>>>>>>> 6c2d2baf78a7d119dc5cc3c9bfcd5fec4b435c5b
     ll res = 1;
     while(n > 0) {
         if(n & 1)
@@ -27,6 +31,7 @@ ll modpow(ll a, ll n, ll mod = MOD) {
     }
     return res;
 }
+<<<<<<< HEAD
 //拡張ユークリッドによる逆元計算
 
 // ax + by = gcd(a, b) となるような (x, y) を求める
@@ -52,6 +57,8 @@ long long modinv(long long a, long long m) {
     return mod(x, m); // 気持ち的には x % m だが、x が負かもしれないので
 }
 
+=======
+>>>>>>> 6c2d2baf78a7d119dc5cc3c9bfcd5fec4b435c5b
 map<ll, ll> prime_factor(ll n) {
     map<ll, ll> ret;
     for(ll i = 2; i * i <= n; i++) {
