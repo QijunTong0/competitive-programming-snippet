@@ -22,3 +22,4 @@ struct UnionFind {
     bool isSame(int x, int y) { return find(x) == find(y); }
     ll size(int k) { return (-data[find(k)]); }
 };
+// ref::https://ei1333.github.io/luzhiled/snippets/structure/union-find.html

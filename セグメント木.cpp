@@ -35,7 +35,10 @@ template <typename Mnd> struct segment_tree {
         return f(l, r);
     }
 };
+// ref::https://ei1333.github.io/luzhiled/snippets/structure/segment-tree.html
 /*
-加法の場合
+累積和
 segment_tree<int> seg(n, [](int a, int b) { return a + b; }, 0);
+RMQ
+segment_tree<int> seg(n, [](int a, int b) { return min(a,b); }, LLONG_MAX);
 */
