@@ -91,5 +91,6 @@
         "filesystem": "cpp",
         "climits": "cpp"
     },
-    "C_Cpp.errorSquiggles": "Disabled"
+    "C_Cpp.errorSquiggles": "Disabled",
+    "python.pythonPath": "/Users/tongqijun/.pyenv/versions/anaconda3-5.3.1/bin/python"
 }
