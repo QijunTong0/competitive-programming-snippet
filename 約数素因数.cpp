@@ -22,3 +22,13 @@ map<ll, ll> prime_factor(ll n) {
         ret[n] = 1;
     return ret;
 }
+ll modpow(ll a, ll n, ll mod = MOD) {
+    ll res = 1;
+    while(n > 0) {
+        if(n & 1)
+            res = res * a % mod;
+        a = a * a % mod;
+        n >>= 1;
+    }
+    return res;
+}

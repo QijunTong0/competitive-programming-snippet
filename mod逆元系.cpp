@@ -51,16 +51,3 @@ long long modinv(long long a, long long m) {
     extGCD(a, m, x, y);
     return mod(x, m); // 気持ち的には x % m だが、x が負かもしれないので
 }
-
-map<ll, ll> prime_factor(ll n) {
-    map<ll, ll> ret;
-    for(ll i = 2; i * i <= n; i++) {
-        while(n % i == 0) {
-            ret[i]++;
-            n /= i;
-        }
-    }
-    if(n != 1)
-        ret[n] = 1;
-    return ret;
-}
