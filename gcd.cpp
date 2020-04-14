@@ -1,6 +1,3 @@
-#include <iostream>
-using namespace std;
-
 ll gcd(ll a, ll b) {
     if(a < b)
         gcd(b, a);
