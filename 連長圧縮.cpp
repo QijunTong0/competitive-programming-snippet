@@ -10,3 +10,5 @@ vector<pair<char, int>> compress(string s) {
     }
     return res;
 }
+//重複数がいらない場合
+a.erase(unique(all(a)), a.end());
