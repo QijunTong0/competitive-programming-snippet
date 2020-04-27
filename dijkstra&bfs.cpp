@@ -1,8 +1,7 @@
 vector<ll> Dijkstra_list(int n, int s, vector<vector<pair<ll, ll>>> &Edge) {
     vector<bool> visited(n, false); //確定済み
     vector<ll> d(n, __LONG_LONG_MAX__ / 3);
-    priority_queue<pair<ll, ll>, vector<pair<ll, ll>>, greater<pair<ll, ll>>>
-        que; //頂点とsからの距離
+    priority_queue<P, vector<P>, greater<P>> que; //頂点とsからの距離
     d[s] = 0;
     que.push(make_pair(0, s));
     while(!que.empty()) {
