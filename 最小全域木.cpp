@@ -22,13 +22,12 @@ struct UnionFind {
     bool isSame(int x, int y) { return find(x) == find(y); }
     ll size(int k) { return (-data[find(k)]); }
 };
-ll Kruskal(vector<vector<pair<ll, pair<int, int>>>> edge) {
-    int n = edge.size();
+//重みはマイナスで入れること！！！！！！！！！
+ll Kruskal(int vertex_size, vector<pair<ll, pair<int, int>>> edge) {
+    int n = vertex_size; //頂点の数を教える
     priority_queue<pair<ll, pair<int, int>>> que;
-    for(int i = 0; i < n; i++) {
-        for(auto elem : edge[i]) {
-            que.push(elem);
-        }
+    for(auto elem : edge) {
+        que.push(elem);
     }
     UnionFind uf(n);
     ll w = 0;
