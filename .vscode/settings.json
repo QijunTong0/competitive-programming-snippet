@@ -89,7 +89,10 @@
         "charconv": "cpp",
         "cuchar": "cpp",
         "filesystem": "cpp",
-        "climits": "cpp"
+        "climits": "cpp",
+        "any": "cpp",
+        "bit": "cpp",
+        "variant": "cpp"
     },
     "C_Cpp.errorSquiggles": "Enabled",
     "python.pythonPath": "/Users/tongqijun/.pyenv/versions/anaconda3-5.3.1/bin/python",
