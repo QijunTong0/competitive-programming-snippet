@@ -1,6 +1,5 @@
-vector<int> d, par;
+vector<int> d;
 int dfs(int now, int prev, vector<vector<int>> &edge) {
-    par[now] = prev;
     if(d[now] != -1) {
         return d[now];
     }
@@ -10,6 +9,5 @@ int dfs(int now, int prev, vector<vector<int>> &edge) {
             tmp += dfs(next, now, edge);
         }
     }
-    d[now] = tmp + 1;
-    return tmp + 1;
+    return d[now] = tmp + 1;
 }
