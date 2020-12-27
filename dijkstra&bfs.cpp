@@ -1,3 +1,4 @@
+#define P pair<ll, ll>
 vector<ll> Dijkstra_list(int n, int s, vector<vector<pair<ll, ll>>> &Edge) {
     vector<bool> visited(n, false); //確定済み
     vector<ll> d(n, __LONG_LONG_MAX__ / 3);
