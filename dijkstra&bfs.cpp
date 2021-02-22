@@ -8,6 +8,9 @@ vector<ll> Dijkstra_list(int n, int s, vector<vector<pair<ll, ll>>> &Edge) {
     while(!que.empty()) {
         auto now = que.top();
         que.pop();
+        if(visited[now.second]) {
+            continue;
+        }
         visited[now.second] = true;
         for(auto e : Edge[now.second]) {
             if(visited[e.second])
