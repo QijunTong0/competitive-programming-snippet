@@ -1,5 +1,5 @@
 #define P pair<ll, ll>
-vector<ll> Dijkstra_adjacencylist(int n, int s, vector<vector<P>> &Edge) {
+vector<ll> Dijkstra_adjacencylist(int n, int s, vector<vector<P>> &edge) {
     vector<bool> visited(n, false); //確定済み
     vector<ll> d(n, __LONG_LONG_MAX__ / 3);
     priority_queue<P, vector<P>, greater<P>> que; //頂点とsからの距離
